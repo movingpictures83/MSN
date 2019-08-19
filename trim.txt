@@ -1,0 +1,2 @@
+inputfile	pipelines/runBacteria/inputFile.csv
+start		2
