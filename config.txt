@@ -1,7 +1,7 @@
 Prefix pipelines/runBacteria/
 # NOTE INITIALLY RUN SPEARMAN TWICE, ONCE THRESHOLDED, ONCE NOT
 Plugin CSVTrim inputfile trim.txt outputfile inputFile.trimmed.csv
-#Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations.output.csv
+Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations.output.unthresholded.csv
 Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations.output.pvalued.csv
 Plugin MCL inputfile correlations.output.pvalued.csv outputfile Clusters_1.5_5_1.5_1.5.pvalued
 
