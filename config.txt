@@ -1,16 +1,16 @@
 Prefix pipelines/runBacteria/
 # NOTE INITIALLY RUN SPEARMAN TWICE, ONCE THRESHOLDED, ONCE NOT
 Plugin CSVTrim inputfile trim.txt outputfile inputFile.trimmed.csv
-Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations.output.unthresholded.csv
-Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations.output.pvalued.csv
-Plugin MCL inputfile correlations.output.pvalued.csv outputfile Clusters_1.5_5_1.5_1.5.pvalued
+Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations/correlations.output.unthresholded.csv
+Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations/correlations.output.pvalued.csv
+Plugin MCL inputfile correlations/correlations.output.pvalued.csv outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued
 
-Plugin ClusterMeans inputfile meanstdparams.txt outputfile Clusters_1.5_5_1.5_1.5.pvalued.2.means.csv
-Plugin ClusterStd inputfile meanstdparams.txt outputfile Clusters_1.5_5_1.5_1.5.pvalued.2.std.csv
-Plugin ClusterLeaders inputfile meanstdparams.txt outputfile Clusters_1.5_5_1.5_1.5.pvalued.2.leaders.csv
+Plugin ClusterMeans inputfile meanstdparams.txt outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued.2.means.csv
+Plugin ClusterStd inputfile meanstdparams.txt outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued.2.std.csv
+Plugin ClusterLeaders inputfile meanstdparams.txt outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued.2.leaders.csv
 
-Plugin Tightness inputfile tightnessparams.txt outputfile Clusters_1.5_5_1.5_1.5.pvalued
-Plugin ATria inputfile correlations.output.pvalued.csv outputfile centralnodes.ATria.noa
-Plugin CSVPad inputfile correlations.output.pvalued.csv outputfile correlations.output.pvalued.padded.csv 
-Plugin QGraph inputfile qgraph_parameters.txt outputfile Clusters_1.5_5_1.5_1.5.pvalued
+Plugin Tightness inputfile tightnessparams.txt outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued
+Plugin ATria inputfile correlations/correlations.output.pvalued.csv outputfile centrality/centralnodes.ATria.noa
+Plugin CSVPad inputfile correlations/correlations.output.pvalued.csv outputfile correlations/correlations.output.pvalued.padded.csv 
+Plugin QGraph inputfile qgraph_parameters.txt outputfile clusters/Clusters_1.5_5_1.5_1.5.pvalued
 #Plugin  inputfile Clusters_1.5_5_1.5_1.5.pvalued outputfile Clusters_1.5_5_1.5_1.5.pvalued.InnerSortedCorrelations.csv

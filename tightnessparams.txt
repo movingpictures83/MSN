@@ -1,4 +1,4 @@
-unthresholded	correlations.output.unthresholded.csv
-thresholded	correlations.output.pvalued.csv
-clusters	Clusters_1.5_5_1.5_1.5.pvalued.sortedclusters.csv	
+unthresholded	correlations/correlations.output.unthresholded.csv
+thresholded	correlations/correlations.output.pvalued.csv
+clusters	clusters/Clusters_1.5_5_1.5_1.5.pvalued.sortedclusters.csv	
 
