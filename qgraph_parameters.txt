@@ -1,7 +1,7 @@
-correlations	pipelines/RunBacteria/correlations/correlations.output.pvalued.padded.csv
-abundances	pipelines/RunBacteria/inputFile.trimmed.csv	
-clusters	pipelines/RunBacteria/clusters/Clusters_1.5_5_1.5_1.5.pvalued.sortedclusters.csv
-centralities	pipelines/RunBacteria/centrality/centralnodes.ATria.noa
+correlations	pipelines/MSN/correlations/correlations.output.pvalued.padded.csv
+abundances	pipelines/MSN/inputFile.trimmed.csv	
+clusters	pipelines/MSN/clusters/Clusters_1.5_5_1.5_1.5.pvalued.sortedclusters.csv
+centralities	pipelines/MSN/centrality/centralnodes.ATria.noa
 spring	true
 fruchterman-reingold	true
 centrality	true

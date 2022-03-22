@@ -1,4 +1,4 @@
-Prefix pipelines/RunBacteria/
+Prefix pipelines/MSN/
 # NOTE INITIALLY RUN SPEARMAN TWICE, ONCE THRESHOLDED, ONCE NOT
 Plugin CSVTrim inputfile trim.txt outputfile inputFile.trimmed.csv
 Plugin Spearman inputfile inputFile.trimmed.csv outputfile correlations/correlations.output.unthresholded.csv

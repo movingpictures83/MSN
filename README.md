@@ -1,4 +1,4 @@
-# RunBacteria
+# MSN
 PluMA pipeline to generate microbial social networks (Fernandez et al, 2015).
 
 Starts from raw abundances, and computes correlations and first- and second-level clusters.
